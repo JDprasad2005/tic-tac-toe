@@ -1,0 +1,114 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.heading{
+    font-size: 40px;
+    margin-top:20px;
+    text-align:center;
+}
+
+body{
+    background-color:#85C7DE;
+    
+}
+.game{
+  
+    height:65vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+   
+}
+
+.container{
+    height:60vh;
+    width:60vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap:10px; 
+   
+}
+
+.box{
+    height:15vh;
+    width:15vh;
+     border-radius: 10px;
+     border:2px solid #9bf6ff;
+     background-color: #f1faee;
+     font-size: 60px;
+     color:black;
+}
+
+.res{
+    font-size: 3rem;
+
+}
+
+.buttons{
+    height:35px;;
+    width:6rem;
+    border:2px solid #9bf6ff;
+    background-color:white;
+    font-size:16px;
+    border-radius: 8px;
+    font-weight:400;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+.hide{
+  display:none;
+}
+
+.bottom{
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+
+.buttons:hover {
+ 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+   border:2px solid #9bf6ff;
+}
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 24px;
+        margin: 15px 10px;
+    }
+
+    .container {
+        height: 90vw;
+        width: 90vw;
+        gap: 6px;
+    }
+
+    .box {
+        height: 28vw;
+        width: 28vw;
+        font-size: 8vw;
+    }
+
+    .buttons {
+        height: 30px;
+        width: 5rem;
+        font-size: 14px;
+    }
+
+    .res {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
