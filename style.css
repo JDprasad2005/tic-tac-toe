@@ -99,7 +99,7 @@ body{
   .box {
     width: 28vw;
     height: 28vw;
-    font-size: 10vw;
+    font-size: 13vw;
   }
 
   .buttons {
@@ -125,7 +125,7 @@ body{
 
 @media (min-width: 350px) and (max-width: 480px) {
   .heading {
-    font-size: 5vw;
+    font-size: 8vw;
     margin-top: 2.5vw;
     padding: 0 2vw;
     text-align: center;
@@ -140,13 +140,13 @@ body{
   .box {
     width: 23vw;
     height: 23vw;
-    font-size: 6vw;
+    font-size: 12vw;
   }
 
   .buttons {
     width: 28vw;
-    height: 6vw;
-    font-size: 2.5vw;
+    height: 8vw;
+    font-size: 4vw;
   }
 
   .reset {
@@ -154,7 +154,7 @@ body{
   }
 
   .res {
-    font-size: 4vw;
+    font-size: 6vw;
     text-align: center;
     padding: 0 2vw;
   }
@@ -182,7 +182,7 @@ body{
   .box {
     width: 24vw;
     height: 24vw;
-    font-size: 6.5vw;
+    font-size: 10vw;
   }
 
   .buttons {
