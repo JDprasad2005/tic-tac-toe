@@ -58,7 +58,7 @@ function checkwinner(){
         if(box1===box2 && box2===box3){
            reset.classList.add("hide");
            disableboxes();
-          result.innerHTML=`Congratulations...! The Winner is ${box1}`;
+          result.innerHTML=`Congratulations... The Winner is "${box1}"`;
           newgame.classList.remove("hide");
           count=0;
         }
