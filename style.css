@@ -82,33 +82,128 @@ body{
    border:2px solid #9bf6ff;
 }
 
-@media (max-width: 600px) {
-    .heading {
-        font-size: 24px;
-        margin: 15px 10px;
-    }
 
-    .container {
-        height: 90vw;
-        width: 90vw;
-        gap: 6px;
-    }
+ @media (max-width: 350px) {
+  .heading {
+    font-size: 7vw;
+    margin-top: 4vw;
+    padding: 0 4vw;
+  }
 
-    .box {
-        height: 28vw;
-        width: 28vw;
-        font-size: 8vw;
-    }
+  .container {
+    width: 90vw;
+    height: 90vw;
+    gap: 3vw;
+  }
 
-    .buttons {
-        height: 30px;
-        width: 5rem;
-        font-size: 14px;
-    }
+  .box {
+    width: 28vw;
+    height: 28vw;
+    font-size: 10vw;
+  }
 
-    .res {
-        font-size: 2rem;
-        text-align: center;
-        padding: 0 10px;
-    }
+  .buttons {
+    width: 40vw;
+    height: 10vw;
+    font-size: 4.5vw;
+  }
+
+  .res {
+    font-size: 6vw;
+    text-align: center;
+    padding: 0 4vw;
+  }
+
+  .bottom {
+    gap: 5vw;
+    margin-top: 5vw;
+  }
+  .reset {
+    margin-top: 10vw;
+  }
 }
+
+@media (min-width: 350px) and (max-width: 480px) {
+  .heading {
+    font-size: 5vw;
+    margin-top: 2.5vw;
+    padding: 0 2vw;
+    text-align: center;
+  }
+
+  .container {
+    width: 75vw;
+    height: 75vw;
+    gap: 1.5vw;
+  }
+
+  .box {
+    width: 23vw;
+    height: 23vw;
+    font-size: 6vw;
+  }
+
+  .buttons {
+    width: 28vw;
+    height: 6vw;
+    font-size: 2.5vw;
+  }
+
+  .reset {
+    margin-top: 3vw;
+  }
+
+  .res {
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 2vw;
+  }
+
+  .bottom {
+    gap: 3vw;
+    margin-top: 3vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 560px) {
+  .heading {
+    font-size: 5.5vw;
+    margin-top: 3vw;
+    padding: 0 2.5vw;
+    text-align: center;
+  }
+
+  .container {
+    width: 78vw;
+    height: 78vw;
+    gap: 1.8vw;
+  }
+
+  .box {
+    width: 24vw;
+    height: 24vw;
+    font-size: 6.5vw;
+  }
+
+  .buttons {
+    width: 30vw;
+    height: 6.5vw;
+    font-size: 2.7vw;
+  }
+
+  .reset {
+    margin-top: 3.5vw;
+  }
+
+  .res {
+    font-size: 4.2vw;
+    text-align: center;
+    padding: 0 2.5vw;
+  }
+
+  .bottom {
+    gap: 3.5vw;
+    margin-top: 3.5vw;
+  }
+}
+
