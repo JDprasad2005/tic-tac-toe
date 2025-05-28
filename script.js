@@ -3,6 +3,7 @@ let reset=document.querySelector(".reset");
 let result= document.querySelector(".res");
 let newgame= document.querySelector(".new");
 let userX=true;
+ let count=0;
  newgame.classList.add("hide");
 let win=[
     [0,1,2],
@@ -21,10 +22,12 @@ boxes.forEach((box)=>{
           box.innerHTML="X";
           userX=false;
           box.disabled=true;
+        count++;
       }else{
           box.innerHTML="O";
           userX=true;
           box.disabled=true;
+        count++;
       }checkwinner();
     }
 });
@@ -55,8 +58,17 @@ function checkwinner(){
            disableboxes();
           result.innerHTML=`Congratulations... The Winner is '${box1}'.`;
           newgame.classList.remove("hide");
+          count=0;
         }
       }
+
+     
+       if(count===9){
+             reset.classList.add("hide");
+              result.innerHTML=`This Match Has No Winner!`;
+                newgame.classList.remove("hide");
+                count=0;
+       }
       
     }
 }
