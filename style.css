@@ -85,8 +85,8 @@ body{
 
  @media (max-width: 350px) {
   .heading {
-    font-size: 7vw;
-    margin-top: 4vw;
+    font-size: 8vw;
+    margin-top: 10vw;
     padding: 0 4vw;
   }
 
@@ -97,8 +97,8 @@ body{
   }
 
   .box {
-    width: 28vw;
-    height: 28vw;
+    width: 24vw;
+    height: 24vw;
     font-size: 13vw;
   }
 
@@ -124,13 +124,22 @@ body{
 }
 
 @media (min-width: 350px) and (max-width: 480px) {
-  .heading {
+.heading {
     font-size: 8vw;
-    margin-top: 2.5vw;
+    margin-top: 10vw;
     padding: 0 2vw;
     text-align: center;
   }
 
+  .game{
+  
+    height:65vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+   
+}
   .container {
     width: 75vw;
     height: 75vw;
