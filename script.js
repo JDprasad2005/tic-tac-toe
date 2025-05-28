@@ -22,12 +22,12 @@ boxes.forEach((box)=>{
           box.innerHTML="X";
           userX=false;
           box.disabled=true;
-        count++;
+         count++;
       }else{
           box.innerHTML="O";
           userX=true;
           box.disabled=true;
-        count++;
+           count++;
       }checkwinner();
     }
 });
@@ -51,30 +51,33 @@ function checkwinner(){
         let box1=boxes[ptn[0]].innerText;
         let box2=boxes[ptn[1]].innerText;
         let box3=boxes[ptn[2]].innerText;
+
+
         
       if(box1!=="" && box2!=="" && box3!==""  ){
         if(box1===box2 && box2===box3){
            reset.classList.add("hide");
            disableboxes();
-          result.innerHTML=`Congratulations... The Winner is '${box1}'.`;
+          result.innerHTML=`Congratulations...! The Winner is ${box1}`;
           newgame.classList.remove("hide");
           count=0;
         }
       }
-
-     
+      
        if(count===9){
              reset.classList.add("hide");
               result.innerHTML=`This Match Has No Winner!`;
                 newgame.classList.remove("hide");
                 count=0;
+                disableboxes();
        }
       
     }
 }
 
 reset.onclick=()=>{
-      let userX=true;
+      count=0;
+       userX=true;
       enableboxes();
        result.innerHTML="";
         reset.classList.remove("hide");
